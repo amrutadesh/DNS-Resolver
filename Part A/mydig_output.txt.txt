@@ -1,0 +1,125 @@
+Part A
+
+Record type - A
+
+myDig www.fb.com A
+
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 9700
+;; flags: qr aa ; qd: 1 an: 3 au: 2 ad: 4 
+;; QUESTIONS:
+;;	www.fb.com., type = A, class = IN
+
+;; ANSWERS:
+star-mini.c10r.facebook.com.	60	IN	A	31.13.69.228
+www.fb.com.		7200	IN	CNAME	www.facebook.com.
+www.facebook.com.	3600	IN	CNAME	star-mini.c10r.facebook.com.
+
+;; AUTHORITY RECORDS:
+c10r.facebook.com.	3600	IN	NS	a.ns.c10r.facebook.com.
+c10r.facebook.com.	3600	IN	NS	b.ns.c10r.facebook.com.
+
+;; ADDITIONAL RECORDS:
+a.ns.c10r.facebook.com.	3600	IN	AAAA	2a03:2880:fffe:b:face:b00c:0:99
+a.ns.c10r.facebook.com.	3600	IN	A	69.171.239.11
+b.ns.c10r.facebook.com.	3600	IN	AAAA	2a03:2880:ffff:b:face:b00c:0:99
+b.ns.c10r.facebook.com.	3600	IN	A	69.171.255.11
+
+;; Message size: 184 bytes
+Query Time : 802
+when : Mon Feb 19 14:46:26 EST 2018
+------------------------------------------------------------------------------------------------------------------------------------------
+Record type - NS
+myDig Google.com. NS
+
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 63228
+;; flags: qr aa ; qd: 1 an: 4 au: 0 ad: 8 
+;; QUESTIONS:
+;;	Google.com., type = NS, class = IN
+
+;; ANSWERS:
+Google.com.		345600	IN	NS	ns1.Google.com.
+Google.com.		345600	IN	NS	ns4.Google.com.
+Google.com.		345600	IN	NS	ns3.Google.com.
+Google.com.		345600	IN	NS	ns2.Google.com.
+
+;; AUTHORITY RECORDS:
+
+;; ADDITIONAL RECORDS:
+ns1.Google.com.		345600	IN	A	216.239.32.10
+ns1.Google.com.		345600	IN	AAAA	2001:4860:4802:32:0:0:0:a
+ns4.Google.com.		345600	IN	A	216.239.38.10
+ns4.Google.com.		345600	IN	AAAA	2001:4860:4802:38:0:0:0:a
+ns3.Google.com.		345600	IN	A	216.239.36.10
+ns3.Google.com.		345600	IN	AAAA	2001:4860:4802:36:0:0:0:a
+ns2.Google.com.		345600	IN	A	216.239.34.10
+ns2.Google.com.		345600	IN	AAAA	2001:4860:4802:34:0:0:0:a
+
+;; Message size: 276 bytes
+Query Time : 520
+when : Mon Feb 19 14:48:01 EST 2018
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Record type - MX
+
+myDig gmail.com. MX
+
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 58019
+;; flags: qr aa ; qd: 1 an: 5 au: 0 ad: 10 
+;; QUESTIONS:
+;;	gmail.com., type = MX, class = IN
+
+;; ANSWERS:
+gmail.com.		3600	IN	MX	20 alt2.gmail-smtp-in.l.google.com.
+gmail.com.		3600	IN	MX	40 alt4.gmail-smtp-in.l.google.com.
+gmail.com.		3600	IN	MX	30 alt3.gmail-smtp-in.l.google.com.
+gmail.com.		3600	IN	MX	5 gmail-smtp-in.l.google.com.
+gmail.com.		3600	IN	MX	10 alt1.gmail-smtp-in.l.google.com.
+
+;; AUTHORITY RECORDS:
+
+;; ADDITIONAL RECORDS:
+alt2.gmail-smtp-in.l.google.com.	300	IN	A	64.233.186.27
+alt2.gmail-smtp-in.l.google.com.	300	IN	AAAA	2800:3f0:4003:c00:0:0:0:1a
+alt4.gmail-smtp-in.l.google.com.	300	IN	A	173.194.76.27
+alt4.gmail-smtp-in.l.google.com.	300	IN	AAAA	2a00:1450:400c:c00:0:0:0:1a
+alt3.gmail-smtp-in.l.google.com.	300	IN	A	209.85.202.27
+alt3.gmail-smtp-in.l.google.com.	300	IN	AAAA	2a00:1450:400b:c00:0:0:0:1a
+gmail-smtp-in.l.google.com.	300	IN	A	74.125.21.27
+gmail-smtp-in.l.google.com.	300	IN	AAAA	2607:f8b0:4002:c06:0:0:0:1a
+alt1.gmail-smtp-in.l.google.com.	300	IN	A	74.125.141.27
+alt1.gmail-smtp-in.l.google.com.	300	IN	AAAA	2607:f8b0:400c:c06:0:0:0:1a
+
+;; Message size: 370 bytes
+Query Time : 396
+when : Mon Feb 19 14:49:23 EST 2018
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Record type - CNAME
+
+myDig  www.fb.com. CNAME
+
+
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 59487
+;; flags: qr aa ; qd: 1 an: 1 au: 2 ad: 4 
+;; QUESTIONS:
+;;	www.fb.com., type = CNAME, class = IN
+
+;; ANSWERS:
+www.fb.com.		7200	IN	CNAME	www.facebook.com.
+
+;; AUTHORITY RECORDS:
+fb.com.			172800	IN	NS	a.ns.facebook.com.
+fb.com.			172800	IN	NS	b.ns.facebook.com.
+
+;; ADDITIONAL RECORDS:
+a.ns.facebook.com.	172800	IN	AAAA	2a03:2880:fffe:c:face:b00c:0:35
+a.ns.facebook.com.	172800	IN	A	69.171.239.12
+b.ns.facebook.com.	172800	IN	AAAA	2a03:2880:ffff:c:face:b00c:0:35
+b.ns.facebook.com.	172800	IN	A	69.171.255.12
+
+;; Message size: 178 bytes
+Query Time : 434
+when : Mon Feb 19 14:39:54 EST 2018
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
